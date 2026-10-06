@@ -30,14 +30,64 @@
             <p>
                 Hobbies: 
                          Kochen: vietnsmeische Gerichte
+                         <br><br>
                          Backen: süßbackwaren,wie bananenbrot,brot,etc.
+                         <br><br>
                          Chatten mit Leuten: 13Social Media Plattformen,wie Discord,Instagram,Facebook,Twitter,Reddit,YouTube,WhatsApp,Telegram,Signal,TikTok
             </p>
         </aside>
 
         
+        <form action="mailto:"sza250634@htl-spengergasse.at" method="post" enctype="text/plain">
+            <label for="vorname">Vorname:</label>
+            <input type="text" id="vorname" name="vorname">
 
+            <label for="nachname">Nachname:</label>
+            <input type="text" id="nachname" name="nachname">
 
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email">
+
+            <p>Geschlecht:</p>
+            <input type="radio" name="geschlecht" value="maennlich"> Männlich
+            <input type="radio" name="geschlecht" value="weiblich"> Weiblich
+            <input type="radio" name="geschlecht" value="divers"> Divers
+            <input type="radio" name="geschlecht" value="keineAngabe"> Keine Angabe
+
+            <p>Interessen:</p>
+            <input type="checkbox" name="interesse" value="sport"> Sport
+            <input type="checkbox" name="interesse" value="musik"> Musik
+
+            <label for="kommentar">Kommentar:</label>
+            <textarea id="kommentar" name="kommentar"
+                placeholder="Fügen Sie Ihren Kommentar ein!"></textarea>
+
+            <input type="hidden" name="seite" value="form1.htm">
+
+            <br><br>
+
+            <input type="submit" value="Formular abschicken">
+            <input type="reset" value="Formular zurücksetzen">
+
+        </form>
+        <form action="text" method="post" enctype="text/plain">
+            <select name="geschlecht">
+                <option value="weiblich">Weiblich</option>
+                <option value="maennlich">Männlich</option>
+                <option value="divers">Divers</option>
+                <option value="keineAngabe" selected>Keine Angabe</option>
+            </select>
+            <br><br>
+            <select name="geschlecht" multiple>
+                <option value="weiblich">Weiblich</option>
+                <option value="maennlich">Männlich</option>
+                <option value="divers">Divers</option>
+                <option value="keineAngabe" selected>Keine Angabe</option>
+            </select>
+        </form>
 
 
     </main>
