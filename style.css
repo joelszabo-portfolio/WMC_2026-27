@@ -57,3 +57,7 @@ footer {
     padding: 2rem;
     text-align: center;
 }
+
+a:hover {
+    background-color: rgba(9, 16, 110, 0.5);
+}
