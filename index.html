@@ -38,7 +38,7 @@
         </aside>
 
         
-        <form action="mailto:sza250634@spengergasse.at" method="post" enctype="text/plain">
+        <form action="/submit" method="post">
             <label for="vorname">Vorname:</label>
             <input type="text" id="vorname" name="vorname">
             
@@ -57,6 +57,18 @@
             <label for="email">E-Mail:</label>
             <input type="email" id="email" name="email">
             
+            <!-- html check programm says this is needed: What's wrong: 
+             Radio and checkbox options are plain text next to inputs, 
+             not associated <label> elements. Screen readers can't tell 
+            which text belongs to which control, and clicking the text 
+            doesn't toggle the input. The radio group also has no <fieldset>/<legend>.
+
+            <fieldset>
+                <legend>Geschlecht:</legend>
+                <input type="radio" id="geschlecht-m" name="geschlecht" value="maennlich">
+                <label for="geschlecht-m">Männlich</label>
+            </fieldset> -->
+
             <p>Geschlecht:</p>
             <input type="radio" name="geschlecht" value="maennlich"> Männlich
             <input type="radio" name="geschlecht" value="weiblich"> Weiblich
@@ -79,12 +91,11 @@
 
             <br><br>
 
-            <form action="text" method="post" enctype="text/plain">
-            <select name="fav food">
+            <select name="favFood">
                 <option value="pizza">Pizza</option>
                 <option value="burger">Burger</option>
                 <option value="pommes">Pommes</option>
-                <option value="noneabove" selected>Keine Angabe</option>
+                <option value="keineAngabe" selected>Keine Angabe</option>
             </select>
             <br><br>
             <select name="hobbies" multiple>
